@@ -1,10 +1,27 @@
 /*NAV STYLING*/
-nav {
-  /*border: 1px solid red;*/
-  /*display: inline;*/
+.main-nav {
+  padding: 0.1em;
   background-color: gray;
   width: 100%;
   height: 70px;
+}
+
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav li {
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
 }
 
 h1 {
@@ -12,20 +29,17 @@ h1 {
   margin-left: 30px;
 }
 
-nav ul {
-  display: inline-block;
+.fa-bars {
+  font-size: em;
   float: right;
+  margin: 30px 30px;
 }
 
-nav ul li {
-  display: inline;
-  margin: auto 2em;
-}
+
 
 /*HERO IMAGE STYLING*/
 .hero {
   clear: both;
-  /*border: 1px solid black;*/
 }
 
 .hero img {
@@ -33,28 +47,22 @@ nav ul li {
   height: auto;
 }
 
-/*br {
-  border: 1px solid black;
-}*/
-
-.projects {
+.projects-display {
   display: inline-block;
-  /*border: 1px solid red;*/
   width: 100%;
   height: 300px;
   margin: 30px auto;
 }
 
-.projects img {
+.projects-display img {
   margin-left: 50px;
 }
 
-.projects p {
+.projects-display p {
   display: inline-block;
   float: right;
-  /*border: 1px solid black;*/
-  width: 400px;
-  height: 200px;
+  max-width: 400px;
+  max-height: 200px;
   margin: 50px 150px;
 }
 
@@ -74,7 +82,6 @@ nav ul li {
 
 .about_me p {
   width: 80%;
-  /*text-align: center;*/
 }
 
 footer {
@@ -85,7 +92,28 @@ footer {
 }
 
 footer h2 {
-  margin: auto 20px;
-  display: inline;
-  vertical-align: middle;
+  margin: 10px 20px;
+  display: inline-block;
 }
+.fa-linkedin {
+  float: right;
+  font-size: 4em;
+  margin: 20px 100px;
+}
+
+@media screen and (min-width: 640px) {
+    .fa fa-bars {
+      display: none;
+      clear: right;
+    }
+    .main-nav ul li {
+      display: inline;
+      margin: auto 2em;
+    }
+
+    .main-nav ul {
+      display: inline-block;
+      float: right;
+    }
+
+ }
