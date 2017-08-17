@@ -103,11 +103,13 @@ footer h2 {
 .footer-links i {
   margin: 20px 30px;
 }
+
 @media screen and (min-width: 940px) {
     .projects-display p {
       display: inline-block;
     }
 }
+
 @media screen and (min-width: 640px) {
     .fa-bars {
       visibility: hidden;
