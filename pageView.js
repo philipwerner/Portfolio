@@ -3,6 +3,7 @@ var pageView = {};
 pageView.handleMainNav = function() {
   $('.main-nav .tab').on('click', function() {
     var $whereToGo = $(this).attr('data-content');
+    console.log($whereToGo);
     $('.tab-content').hide();
     $('#' + $whereToGo).fadeIn(1000);
   })
