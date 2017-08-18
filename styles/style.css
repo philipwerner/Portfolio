@@ -9,10 +9,6 @@
 
 .main-nav ul {
   display: none;
-  /*padding: 0;
-  list-style: none;
-  clear: both;
-  border: 1px solid red;*/
 }
 
 .main-nav:hover ul {
@@ -24,6 +20,12 @@
   font-size: 1.5em;
   padding: .5em .2em;
   border-bottom: 1px solid #ccc;
+  text-decoration: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -107,6 +109,10 @@ footer h2 {
 .footer-links i {
   margin: 20px 30px;
 }
+.footer-links a {
+  text-decoration: none;
+  color: black;
+}
 
 @media screen and (min-width: 940px) {
     .projects-display p {
@@ -114,7 +120,7 @@ footer h2 {
     }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 700px) {
     .fa-bars {
       visibility: hidden;
       clear: right;
@@ -127,12 +133,12 @@ footer h2 {
 
     .main-nav ul li a {
       text-decoration: none;
+      color: black;
     }
 
     .main-nav ul {
       display: inline-block;
       float: right;
-      max-width: 500px;
-      border: 1px solid red;
+      max-width: 450px;
     }
  }
