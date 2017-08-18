@@ -38,11 +38,12 @@ h1 {
 /*HERO IMAGE STYLING*/
 .hero {
   clear: both;
+  max-width: 100%;
+  max-height: 622px;
 }
 
 .hero img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
 }
 
 .projects-display {
@@ -116,8 +117,9 @@ footer h2 {
       clear: right;
     }
     .main-nav ul li {
-      display: inline;
+      display: inline-block;
       margin: auto 2em;
+      border: none;
     }
 
     .main-nav ul li a {
@@ -125,6 +127,7 @@ footer h2 {
     }
 
     .main-nav ul {
+      text-align: center;
       display: inline-block;
       float: right;
     }
