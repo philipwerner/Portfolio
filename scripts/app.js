@@ -3,8 +3,9 @@ jQuery(document).ready(function ($) {
   $('#checkbox').change(function(){
     setInterval(function () {
         moveRight();
-    }, 3000);
+    }, 5000);
   });
+  $('#checkbox').click();
 
 	var slideCount = $('#slider ul li').length;
 	var slideWidth = $('#slider ul li').width();
@@ -20,7 +21,7 @@ jQuery(document).ready(function ($) {
     function moveLeft() {
         $('#slider ul').animate({
             left: + slideWidth
-        }, 200, function () {
+        }, 1500, function () {
             $('#slider ul li:last-child').prependTo('#slider ul');
             $('#slider ul').css('left', '');
         });
@@ -29,7 +30,7 @@ jQuery(document).ready(function ($) {
     function moveRight() {
         $('#slider ul').animate({
             left: - slideWidth
-        }, 200, function () {
+        }, 1500, function () {
             $('#slider ul li:first-child').appendTo('#slider ul');
             $('#slider ul').css('left', '');
         });

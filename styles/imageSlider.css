@@ -1,7 +1,9 @@
+/*CAROUSEL*/
 #slider {
   position: relative;
   overflow: hidden;
   margin: 30px auto;
+  width: 100%;
 }
 
 #slider ul {
@@ -18,9 +20,8 @@
   float: left;
   margin: 0;
   padding: 0;
-  max-width: 800px;
-  max-height: 622px;
-  background: #ccc;
+  width: 100%;
+  /*background: #ccc;*/
   text-align: center;
   line-height: 300px;
 }
@@ -57,6 +58,7 @@ a.control_next {
 }
 
 .slider_option {
+  display: none;
   position: relative;
   margin: 10px auto;
   width: 160px;
