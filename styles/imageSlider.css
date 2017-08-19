@@ -3,14 +3,14 @@
   position: relative;
   overflow: hidden;
   margin: 30px auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 #slider ul {
   position: relative;
   margin: 0;
   padding: 0;
-  max-height: 200px;
+  /*max-height: 200px;*/
   list-style: none;
 }
 
@@ -21,7 +21,6 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  /*background: #ccc;*/
   text-align: center;
   line-height: 300px;
 }
