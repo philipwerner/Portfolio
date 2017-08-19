@@ -8,8 +8,18 @@ pageView.handleMainNav = function() {
     $('#' + $whereToGo).fadeIn(1000);
   })
 
-  $('.main-nav .tab:first').click(); // Let's now trigger a click on the first .tab element, to set up the page.
+  $('.main-nav .tab:first').click();
 };
 $(document).ready(function() {
   pageView.handleMainNav();
 })
+
+
+// PROJECT DESCRIPTION ON HOVER FOR MOBILE
+// $('#project-img').mouseover(function() {
+//   $('.text').css("visibility","visible");
+// });
+//
+// $('#project-img').mouseout(function() {
+//   $('.text').css("visibility","hidden");
+// });
