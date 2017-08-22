@@ -17,9 +17,9 @@ $(document).ready(function() {
 
 // PROJECT DESCRIPTION ON HOVER FOR MOBILE
 // $('#project-img').mouseover(function() {
-//   $('.text').css("visibility","visible");
+//   $('.project-info').css('visibility','visible');
 // });
 //
 // $('#project-img').mouseout(function() {
-//   $('.text').css("visibility","hidden");
+//   $('.project-info').css('visibility','hidden');
 // });
