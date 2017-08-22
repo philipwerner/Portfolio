@@ -13,13 +13,3 @@ pageView.handleMainNav = function() {
 $(document).ready(function() {
   pageView.handleMainNav();
 })
-
-
-// PROJECT DESCRIPTION ON HOVER FOR MOBILE
-// $('#project-img').mouseover(function() {
-//   $('.project-info').css('visibility','visible');
-// });
-//
-// $('#project-img').mouseout(function() {
-//   $('.project-info').css('visibility','hidden');
-// });
