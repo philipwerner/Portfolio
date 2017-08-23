@@ -32,6 +32,7 @@ Projects.prototype.toHtml = function() {
   return templateRender(this);
 };
 
+
 projectData.forEach(function(articleObject) {
   projects.push(new Projects(articleObject));
 });
@@ -39,6 +40,7 @@ projectData.forEach(function(articleObject) {
 projects.forEach(function(projects){
   $('#projects').append(projects.toHtml());
 });
+
 $(document).ready(function() {
   Projects.prototype.toHtml();
 })
