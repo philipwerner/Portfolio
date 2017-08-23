@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 var slideCount = $('#slider ul li').length;
 var slideWidth = $('#slider ul li').width();
 var slideHeight = $('#slider ul li').height();

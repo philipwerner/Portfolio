@@ -1,23 +1,30 @@
-.projects-display div {
-  border: 1px solid red;
-  display: block;
-  max-width: 450px;
-  width: 100%;
+#projects {
+  clear: both;
+  display: inline-block;
   text-align: center;
-  margin: 30px 50px;
-  width: 100%;
+  max-width: 100%;
+  margin: 30px auto;
+  margin-bottom: 5em;
+  align-items: center;
+}
+.projectEntire {
+  margin: 3em;
+  margin-top: 5em;
+  height: 500px;
+  width: 450px;
+  max-width: 100%;
+}
+.projectEntire:first-child {
+  margin-top: 1em;
 }
 .projects-display {
+  border: 1px solid black;
   display: inline-block;
-  border: 1px solid green;
   width: 100%;
   max-height: 500px;
   margin: 30px auto;
   text-align: center;
 }
-.projects-display div:first-child {
-  float: left;
-}
-.projects-display div:last-child {
-  float: right;
+.project-info {
+  margin: 2em;
 }

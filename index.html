@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/imageSlider.css">
-    <link rel="stylesheet" href="styles/modules.css"
+    <link rel="stylesheet" href="styles/modules.css">
+
+    <script id="project-template" type="text/x-handlebars-template">
+      <section class="projectEntire">
+        <h3>{{title}}</h3>
+        <article class="projects-display">
+          <img src='{{{source}}}' id="project-img">
+          <section class="project-info">{{body}}</section>
+        </article>
+    </script>
+
   </head>
   <body>
     <header>
@@ -38,18 +48,7 @@
 
 
     <section id="projects" class="tab-content">
-        <h2>Projects</h2>
-        <article class="projects-display">
-          <div>
-            <img src="http://placehold.it/450x300/000000" id="project-img">
-            <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Similiter sensus, cum accessit ad naturam, tuetur illam quidem, sed etiam se tuetur; Etiam beatissimum? His singulis copiose responderi solet, sed quae perspicua sunt longa esse non debent.</p>
-          </div>
 
-          <div>
-            <img src="http://placehold.it/450x300/000000" id="project-img">
-            <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Similiter sensus, cum accessit ad naturam, tuetur illam quidem, sed etiam se tuetur; Etiam beatissimum? His singulis copiose responderi solet, sed quae perspicua sunt longa esse non debent.</p>
-          </div>
-      </article>
     </section>
 
     <section id="about" class="tab-content">
@@ -80,7 +79,9 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+    <script src="scripts/projects.js"></script>
     <script src="scripts/pageView.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/carousel.js"></script>
   </body>
 </html>

@@ -82,11 +82,11 @@ footer h2 {
   color: black;
 }
 
-@media screen and (min-width: 940px) {
+/*@media screen and (min-width: 940px) {
     .projects-display {
       display: block;
     }
-}
+}*/
 
 @media screen and (min-width: 700px) {
     .fa-bars {
