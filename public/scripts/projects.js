@@ -2,7 +2,7 @@
 
 let projectData = [
   {
-    title: 'project 1',
+    title: 'Fuzz Feed',
     source: 'http://placehold.it/450x300/000000',
     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Similiter sensus, cum accessit ad naturam, tuetur illam quidem, sed etiam se tuetur; Etiam beatissimum? His singulis copiose responderi solet, sed quae perspicua sunt longa esse non debent.'
   }, {
