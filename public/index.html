@@ -12,10 +12,10 @@
 
     <script id="project-template" type="text/x-handlebars-template">
       <section class="projectEntire">
-        <h3>{{title}}</h3>
+        <h3 id="title">{{title}}</h3>
         <article class="projects-display">
           <img src='{{{source}}}' id="project-img">
-          <section class="project-info">{{body}}</section>
+          <section class="project-info" id="body">{{body}}</section>
         </article>
     </script>
 
@@ -83,5 +83,8 @@
     <script src="scripts/projects.js"></script>
     <script src="scripts/pageView.js"></script>
     <script src="scripts/carousel.js"></script>
+    <script>
+      app.Projects.fetchAll(app.pageView.initIndexPage);
+    </script>
   </body>
 </html>
