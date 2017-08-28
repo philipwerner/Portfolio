@@ -14,7 +14,7 @@
       <section class="projectEntire">
         <h3 id="title">{{title}}</h3>
         <article class="projects-display">
-          <img src='{{{source}}}' id="project-img">
+          <img src='{{source}}' id="project-img">
           <section class="project-info" id="body">{{body}}</section>
         </article>
     </script>
@@ -26,9 +26,9 @@
         <h1>Philip Werner</h1>
         <i class="fa fa-bars" aria-hidden="true"></i>
         <ul>
-          <li class="tab" data-content="home"><a href=#>Home</a></li>
-          <li class="tab" data-content="projects"><a href=#>Projects</a></li>
-          <li class="tab" data-content="about"><a href=#>About</a></li>
+          <li class="tab" data-content="home"><a href="/">Home</a></li>
+          <li class="tab" data-content="projects"><a href="/projects">Projects</a></li>
+          <li class="tab" data-content="about"><a href="/about">About</a></li>
         </ul>
       </nav>
     </header>
@@ -47,28 +47,28 @@
       </section>
 
 
-    <section id="projects" class="tab-content">
+      <section id="projects" class="tab-content">
 
-    </section>
+      </section>
 
-    <section id="about" class="tab-content">
-      <article class="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS/li>
-          <li>Java Script</li>
-          <li>Leadership</li>
-          <li>Time Management</li>
-        </ul>
-      </article>
+      <section id="about" class="tab-content">
+        <article class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS/li>
+            <li>Java Script</li>
+            <li>Leadership</li>
+            <li>Time Management</li>
+          </ul>
+        </article>
 
 
-      <article class="about_me">
-        <h2>About ME</h2>
-        <p>I spent seven years as a US Army Infantryman with multiple combat deployments. After my time in the Army, I worked as a Mechanical Foreman for BNSF Railway, manmagaing a work team of 50 skilled technicians. After this I spent two years as an independant contract shipwright working on wooden and fiberglass boats. I decided to switch to a career that has always had my interest and the timing worked out.</p>
-      </article>
-    </section>
+        <article class="about_me">
+          <h2>About ME</h2>
+          <p>I spent seven years as a US Army Infantryman with multiple combat deployments. After my time in the Army, I worked as a Mechanical Foreman for BNSF Railway, manmagaing a work team of 50 skilled technicians. After this I spent two years as an independant contract shipwright working on wooden and fiberglass boats. I decided to switch to a career that has always had my interest and the timing worked out.</p>
+        </article>
+      </section>
     </main>
 
     <footer>
@@ -80,11 +80,13 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
-    <script src="scripts/projects.js"></script>
-    <script src="scripts/pageView.js"></script>
-    <script src="scripts/carousel.js"></script>
-    <script>
-      app.Projects.fetchAll(app.pageView.initIndexPage);
-    </script>
+    <script src="scripts/controller/carouselController.js"></script>
+    <script src="scripts/controller/projectsController.js"></script>
+    <script src="scripts/controller/aboutController.js"></script>
+    <script src="scripts/models/carousel.js"></script>
+    <script src="scripts/views/projectsView.js"></script>
+    <script src="scripts/views/pageView.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="scripts/controller/routes.js"></script>
   </body>
 </html>

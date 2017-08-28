@@ -36,6 +36,7 @@ h1 {
 }
 
 .fa-bars {
+  position: fixed;
   font-size: em;
   float: right;
   margin: 30px 30px;

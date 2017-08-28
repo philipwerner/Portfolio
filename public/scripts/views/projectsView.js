@@ -1,5 +1,5 @@
 'use strict';
-var app = app || {};
+var app = {} || app;
 
 (function(module) {
   let projects = [];
@@ -24,12 +24,12 @@ var app = app || {};
     })
   };
 
+
   Projects.fetchAll = function() {
     if (localStorage.rawData) {
 
       Projects.loadAll(JSON.parse(localStorage.getItem('rawData')));
-      console.log(JSON.parse(localStorage.getItem('rawData')));
-      app.projectView.initIndexPage(rawData);
+      app.pageView.initIndexPage(rawData);
     } else {
 
       $.getJSON('data/projectdata.json')
