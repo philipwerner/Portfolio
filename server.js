@@ -17,10 +17,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('./public'));
 
 
-
-// app.use(function(req, res){
-//   console.log('File not found, 404!!');
-// })
 app.listen(PORT, function(){
   console.log('Portfolio is listening on port ' + PORT);
 })
@@ -48,8 +44,8 @@ function loadProjects() {
 
 function loadDB() {
   client.query(`
-    CREATE TABLE IF NOT EXISTS articles (
-      article_id SERIAL PRIMARY KEY,
+    CREATE TABLE IF NOT EXISTS projects (
+      project_id SERIAL PRIMARY KEY,
       title VARCHAR(255) NOT NULL,
       source VARCHAR(255)
       body TEXT NOT NULL);`

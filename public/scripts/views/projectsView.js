@@ -1,8 +1,8 @@
 'use strict';
-var app = {} || app;
+var app = app || {};
 
 (function(module) {
-  let projects = [];
+  const projects = {};
 
   function Projects (rawDataObj) {
     this.title = rawDataObj.title;
@@ -40,4 +40,6 @@ var app = {} || app;
     }
   }
   module.Projects = Projects
+  // module.Projects.loadAll = Projects.loadAll
+  // module.Projects.fetchAll = Projects.fetchAll
 })(app)

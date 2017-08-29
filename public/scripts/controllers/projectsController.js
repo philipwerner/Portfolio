@@ -7,8 +7,8 @@ var app = app || {};
   projectsController.init = function() {
     $('#home').hide();
     $('#about').hide();
-    app.Projects.fetchAll();
-    app.pageView.initIndexPage();
+    // app.pageView.initIndexPage();
+    // app.Projects.fetchAll();
     $('#projects').fadeIn(1000);
   };
 

@@ -1,7 +1,8 @@
 'use strict';
-var app = {} || app;
+var app = app || {};
+
 (function(module) {
-  var pageView = {};
+  const pageView = {};
 
   pageView.initIndexPage = function() {
     app.Projects.all.forEach(function(project) {
