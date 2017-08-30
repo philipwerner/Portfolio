@@ -4,10 +4,9 @@ var app = app || {};
 (function(module){
   const aboutController = {};
 
-  aboutController.init = function() {
-    $('#home').hide();
-    $('#projects').hide();
-    $('#about').fadeIn(1000);
+  aboutController.init = () => {
+    $('#about').show().siblings().hide();
+    app.repos.requestRepos(app.repoView.index);
   };
 
   module.aboutController = aboutController
