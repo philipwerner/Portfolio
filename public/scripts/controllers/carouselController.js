@@ -6,7 +6,6 @@ var app = app || {};
   carouselController.init = function() {
     $('#about').hide();
     $('#projects').hide();
-    app.carousel.init();
     $('#home').show();
   };
 

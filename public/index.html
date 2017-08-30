@@ -11,12 +11,16 @@
     <link rel="stylesheet" href="styles/modules.css">
 
     <script id="project-template" type="text/x-handlebars-template">
-      <section class="projectEntire">
-        <h3 id="title">{{title}}</h3>
-        <article class="projects-display">
-          <img src='{{source}}' id="project-img">
-          <section class="project-info" id="body">{{body}}</section>
-        </article>
+      <li>
+        <a href="{{html_url}}" target="_blank">
+          <h3>{{name}}</h3>
+        </a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+
+      </li>
     </script>
 
   </head>
@@ -36,8 +40,8 @@
     <main>
       <section id="home" class="tab-content">
           <div id="slider">
-            <a href="#" class="control_next">></a>
-            <a href="#" class="control_prev"><</a>
+            <a href="#" class="control_next">&rt</a>
+            <a href="#" class="control_prev">&lt</a>
             <ul>
               <li class="imageOne"><img src="images/me-osa.jpg"></li>
               <li class="imageTwo"><img src="images/vball.jpg"></li>
@@ -48,7 +52,9 @@
 
 
       <section id="projects" class="tab-content">
+        <ul>
 
+        </ul>
       </section>
 
       <section id="about" class="tab-content">
@@ -56,7 +62,7 @@
           <h2>Skills</h2>
           <ul>
             <li>HTML</li>
-            <li>CSS/li>
+            <li>CSS</li>
             <li>Java Script</li>
             <li>Leadership</li>
             <li>Time Management</li>
@@ -72,18 +78,24 @@
     </main>
 
     <footer>
-      <h2>&copy philip-werner.online</h2>
+      <h2>&copy; philip-werner.online</h2>
       <div class="footer-links">
         <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://github.com/philipwerner"><i class="fa fa-github" aria-hidden=" true"></i></a>
+        <a href="https://github.com/philipwerner"><i class="fa fa-github" aria-hidden="true"></i></a>
       </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+
+    <script src="scripts/models/githubtoken.js"></script>
     <script src="scripts/models/carousel.js"></script>
+    <script src="scripts/models/repo.js"></script>
+
     <script src="scripts/views/pageView.js"></script>
     <script src="scripts/views/projectsView.js"></script>
+
     <script src="scripts/controllers/carouselController.js"></script>
     <script src="scripts/controllers/projectsController.js"></script>
     <script src="scripts/controllers/aboutController.js"></script>

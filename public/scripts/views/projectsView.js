@@ -2,44 +2,25 @@
 var app = app || {};
 
 (function(module) {
-  const projects = {};
+  const projectsView = {};
 
-  function Projects (rawDataObj) {
-    this.title = rawDataObj.title;
-    this.source = rawDataObj.source;
-    this.body = rawDataObj.body;
-  }
+  const ui = function() {
+    let $projects = $('#projects');
 
-  Projects.prototype.toHtml = function() {
-
-    var template = $('#projects').html();
-    var templateRender = Handlebars.compile(template);
-
-    return templateRender(this);
+    $projects.find('ul').empty();
+    $projects.show().siblings().hide();
   };
 
-  Projects.loadAll = function(rawData) {
-    rawData.forEach(function(ele) {
-      projects.push(new Projects(ele));
-    })
+  var template = $('#project-template').html();
+  var render = Handlebars.compile(template);
+
+  projectsView.index = function() {
+    ui();
+
+    $('#projects ul').append(
+      app.repos.with('name').map(render)
+    );
   };
 
-
-  Projects.fetchAll = function() {
-    if (localStorage.rawData) {
-
-      Projects.loadAll(JSON.parse(localStorage.getItem('rawData')));
-      app.pageView.initIndexPage(rawData);
-    } else {
-
-      $.getJSON('data/projectdata.json')
-      .done(function(rawData){
-        Projects.loadAll(rawData);
-        localStorage.setItem('rawData', JSON.stringify(rawData))
-      }).fail(function(error){console.log(error);});
-    }
-  }
-  module.Projects = Projects
-  // module.Projects.loadAll = Projects.loadAll
-  // module.Projects.fetchAll = Projects.fetchAll
-})(app)
+  module.projectsView = projectsView;
+})(app);
