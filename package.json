@@ -1,0 +1,30 @@
+{
+  "name": "phil-portfolio",
+  "version": "1.0.0",
+  "description": "Codefellows 301 Portfolio Assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "none",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipwerner/Portfolio.git"
+  },
+  "keywords": [
+    "developer"
+  ],
+  "author": "Phil Werner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philipwerner/Portfolio/issues"
+  },
+  "homepage": "https://github.com/philipwerner/Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-request-proxy": "^2.0.0",
+    "fs": "0.0.1-security",
+    "pg": "^7.2.0"
+  }
+}
